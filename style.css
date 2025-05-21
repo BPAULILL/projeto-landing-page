@@ -1,0 +1,160 @@
+* {
+    margin: 0rem;
+    font-family: 'inter';
+}
+
+#logo {
+    margin-left: 3.125rem;
+    margin-top: 3.125rem;
+}
+
+#título-menusuperior {
+    margin-left: 9.375rem;
+    margin-top: 3.125rem;
+}
+
+#texto-menusuperior {
+    margin-left: 9.375rem;
+    margin-top: 2.1875rem;
+    padding-bottom: 6.25rem;
+}
+
+#menusuperior {
+    background-image: url(imagens/fundo-menusuperior.svg);
+    color: white;
+}
+
+#menuinformacional {
+    background-color: #eaece5;
+    display: flex;
+    justify-content: space-around;
+    grid-auto-flow: column;
+    columns: auto;
+    align-items: center;
+}
+
+.icone {
+    margin: 1vw 0;
+    padding: 1vw;
+}
+
+.textoinformativo {
+    display: flex;
+    align-items: center;
+}
+
+#secaovideo {
+    display: flex;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    columns: auto;
+}
+
+#titulovideo {
+    color: #247BA0;
+    margin-top: 3.125rem;
+    font-size: 2rem;
+    margin: 3.125rem 1.5625rem 3.125rem 6.25rem;
+    width: 40.625rem;
+}
+
+#textovideo {
+    font-size: 1rem;
+    margin: 3.125rem 1.5625rem 3.125rem 6.25rem;
+    margin-top: -3.125rem;
+    width: 40.625rem;
+}
+
+#video {
+    margin: 3.125rem 1.5625rem 3.125rem 6.25rem;
+    width: 40.625rem;
+    height: 17.6875rem;
+}
+
+#carrossel {
+    background-color: #247BA0;
+    padding: 3.125rem;
+}
+
+#titulo-carrossel {
+    color: white;
+    text-align: center;
+    font-size: 1.5625rem;
+}
+
+#div-cards {
+    margin-top: 1.5625rem;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.card {
+    width: 27vw;
+}
+
+#setaesquerda {
+    display: none;
+}
+
+#Bruna {
+    display: none;
+}
+
+#Samantha{
+    margin-left: 15vw;
+}
+
+#Leonardo{
+    margin-left: 12vw;
+}
+
+.seta {
+    cursor: pointer;
+    margin-top: 1vh;
+    margin-left: 5vw;
+}
+
+.seta:hover {
+    transform: translateY(-0.4375rem);
+    transition-duration: 0.5s;
+}
+
+#formulario {
+    text-align: center;
+}
+
+#tituloformulario {
+    margin: 1.5625rem;
+    color: #383838;
+    font-size: 2rem;
+}
+
+input {
+    background-color: #eaece5;
+    width: 18.75rem;
+    height: 2.5rem;
+    margin-top: 0.9375rem;
+    border: 0rem;
+    border-radius: 0.3125rem;
+    padding-left: 0.625rem;
+}
+
+button {
+    height: 2.5rem;
+    width: 15.625rem;
+    background-color: #247BA0;
+    color: #eaece5;
+    border: 0rem;
+    border-radius: 0.3125rem;
+    margin-bottom: 3.125rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #318fb8;
+    color: white;
+    transform: translateY(-0.4375rem);
+    box-shadow: 0rem 0.9375rem 1.25rem #13171a;
+    transition-duration: 0.5s;
+}

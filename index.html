@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- Tipo do documento = html -->
+<html lang="pt-br"> <!-- Idioma da página -->
+<head><!-- Menu principal html -->
+    <meta charset="UTF-8"> <!-- Especificar codificação utilizada -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garantir que as pessoas consigam abrir formato legal em qualque dispositivo, pc, tablet, telefone, etc. Tem a ver com a resolução (width) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Conectar a fonte do google fonte para o html, deve ser adicionado o código ao cabeçalho principal do html, que é gerado ao digitar html:5 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Conectar a fonte do google fonte para o html, deve ser adicionado o código ao cabeçalho principal do html, que é gerado ao digitar html:5 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> <!-- Conectar a fonte do google fonte para o html, deve ser adicionado o código ao cabeçalho principal do html, que é gerado ao digitar html:5 -->
+    <link rel="stylesheet" href="style.css"> <!-- Link de referência CSS que deve ser adicionado para referênciar qual arquivo CSS vai tratar dos estilos dos elementos do site. -->
+    <title> Escola DNC </title><!-- Título oficial da página, o qual aparece no browser -->
+</head> <!-- Fim do menu principal do HTML -->
+<body> <!-- Inicio do corpo do site -->
+    <!-- MENU SUPERIOR-->
+    <div id="menusuperior"> <!-- Criar uma divisão -->
+        <a href="https://www.escoladnc.com.br/"><img src="./imagens/logo.svg" id="logo" alt="ERROR"></a> <!-- Adicionar link e relacionar ele com uma imagem. -->
+        <h1 id="título-menusuperior">Dê os primeiros passos da<br> <!-- Inserir titulo e colocar ele como um id determinado -->
+        sua carreira em Tecnologia</h1>
+        <p id="texto-menusuperior">Inscreva-se no curso gratuito de Introdução à<br> <!-- Inserir parágrafo e colocar ele com um id determinado -->
+        Tecnologia da DNC School e aprenda os principais<br> <!-- Pular linha <br>  -->
+        fundamentos para construir experiências efetivas.</p>
+    </div>
+    <!-- MENU INFORMACIONAL -->
+    <div id="menuinformacional"><!-- Criar divisão -->
+        <p class="textoinformativo"> <!-- Paragrafo -->
+            <img class="icone" src="./icones/certificado.svg" id="certificado" alt=""> <!-- Adicionar imagem -->
+            Certificado de conclusão  <!-- Texto comum -->
+          </p>
+          <p class="textoinformativo"> <!-- Paragrafo -->
+            <img class="icone" src="./icones/relogio.svg" id="certificado" alt=""><!-- Imagem -->
+            4 horas de conteúdo <!-- Texto comum -->
+          </p> <!-- Fim do paragrafo -->
+          <p class="textoinformativo"> <!-- Parágrafo -->
+            <img class="icone" src="./icones/relogio.svg" id="certificado" alt=""> <!-- Imagem -->
+            Aulas online gravadas <!-- Texto comum -->
+          </p>
+    </div> <!-- Fechar a divisão -->
+
+    <!-- SEÇÃO VÍDEO --> 
+    <div id="secaovideo"> <!-- Nova divisão -->
+        <iframe id="video" src="https://www.youtube.com/embed/ITxGkd9h4n4" title="DNC - A escola inovadora que forma profissionais de alta perfomance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  <!-- Código para embedar vídeo, copiar do youtube o embed code e colar -->
+        <div> <!-- Dividir a nova divisão em 2 divisões -->
+        <h1 id="titulovideo">Aprenda com especialistas e <br> <!-- Título adicionado a nova divisão -->
+            comece seu primeiro projeto 
+        </h1><br><br> <!-- Fim do título e pula duas linhas -->
+        <p id="textovideo">Conheça o processo de desenvolvimento e entenda como utilizar<br>  <!-- Parágrafo -->
+           os principais métodos e ferramentas da área para resolver <br> 
+           problemas complexos.<br><br>
+
+           Conquiste seu certificado e desenvolva um projeto prático para <br>
+           aplicar seus conhecimentos.</p> <!-- Fim do paragrafo -->
+        </div> <!-- Fim da divisão interna -->
+    </div> <!-- Fim da seção -->
+
+    <!-- SEÇÃO CARROSSEL -->
+      <!-- SEÇÃO CARROSSEL -->
+      <div id="carrossel"> <!-- Novo pedaço da pagina, adicinado com div -->
+        <h1 id="titulo-carrossel"> Mais de 500 alunos já iniciaram seus estudos </h1><br><br> <!-- Título da divisão -->
+        <!-- DIVISÃO DOS CARDS --> 
+        <div id="div-cards"><!-- Nova divisão para o carrossel dos cards -->
+            <img id="setaesquerda" onclick="RolarParaEsquerda()" class="seta" src="./icones/setaesquerda.svg" alt=""> <!-- Nova imagem de seta com função RolarParaEsquerda javascript adicionada quando o mouse passa em cima onclick -->
+            <img id="Leonardo" class="card" src="./cards/Leonardo.svg" alt="">  <!-- Imagem do card Leonardo -->
+            <img id="Samantha" class="card" src="./cards/Samantha.svg" alt=""><!-- Imagem do card Samantha -->
+            <img id="Bruna" class="card" src="./cards/Bruna.svg" alt=""> <!-- Imagem do card Bruna -->
+            <img id="setadireita" onclick="RolarParaDireita()" class="seta" src="./icones/setadireita.svg" alt=""> <!-- Nova imagem de seta com função RolarParaDireita javascript adicionado quando o mouse passa em cima onclick -->
+        </div><!-- Fim da divisão dos cards carroussell -->
+     </div> <!-- Fim da divisão com título mais cards -->
+     <!--- SEÇÃO FORMULÁRIO -->
+     <div id="formulario"> <!-- Nova divisão formulário -->
+        <h1 id="tituloformulario">Comece agora mesmo e dê o próximo passo da sua carreira</h1> <!-- Título da formulário -->
+        <form action="https://api.sheetmonkey.io/form/jZr1G1njmSNzuCL8MK6L9p" method="POST"> <!-- Criação do formulário relacionado a apisheetmonkey, que relaciona a resposta da página HTML com uma planilha Google Sheets -->
+            <input type="text" placeholder="Nome" name="Name" required><br><br> <!-- Input do nome da pessoa tipo texto, com valor de início nome, e status = obrigatório, via requerid -->
+            <input type="email" placeholder="Email" name="Email" required><br><br> <!-- Input do e-mail da pessoa tipo e-mail, com valor de início e-mail, e status = obrigatório, via required -->
+            <input type="number" placeholder="Telefone" name="Phone"><br><br> <!-- Input do número de telefone da pessoa, tipo número, não obrigatório pois não tem o comando required -->
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" /><!-- Input criado automaticamente e invisível pro usuário (type=hidden) marcando o horário que a pessoa clicar no botão abaixo: Acesse a ementa grátis -->
+            <button type="submit">Acesse a ementa grátis</button> <!-- Adicionado botão de finalização do formulário com nome: Acesse a ementa grátis -->
+        </form> <!-- Fim do formulário  -->
+     </div> <!-- Fim da seção formulário -->
+     <script src="index.js"></script> <!-- Arquivo JavaScript que contem todas as funções utilizadas no código HTML -->
+</body> <!-- Fim do corpo do site -->
+</html> <!-- Fim do site -->
